@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/place_detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/place_details_title_view_height"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/place_details_name_font_size" />
+
+    <View
+        android:id="@+id/place_detail_name_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/details_divider_view_height"
+        android:layout_below="@id/place_detail_name"
+        android:layout_marginTop="@dimen/details_divider_view_margin"
+        android:background="@android:color/darker_gray" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/place_detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/place_details_image_view_height"
+        android:layout_below="@id/place_detail_name_divider"
+        android:scaleType="fitXY" />
+
+    <View
+        android:id="@+id/place_detail_image_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/details_divider_view_height"
+        android:layout_below="@id/place_detail_image"
+        android:layout_marginBottom="@dimen/details_divider_view_margin"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/place_detail_vicinity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place_detail_image_divider"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/place_details_default_font_size" />
+
+    <Button
+        android:id="@+id/place_detail_btn_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/place_details_default_padding"
+        android:text="@string/place_detail_map_btn_title"/>
+</RelativeLayout>

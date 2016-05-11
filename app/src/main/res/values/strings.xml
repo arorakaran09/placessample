@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">StarPlaces</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_places_results">PlacesResultsActivity</string>
+
+    <string name="progress_dialog_title">Please wait</string>
+    <string name="progress_dialog_msg">Fetching Places&#8230;</string>
+    <string name="places_api_url">https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=lat_key,lon_key&amp;radius=radius_key&amp;types=type_key&amp;key=api_key</string>
+    <string name="photos_api_url">https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&amp;photoreference=photo_ref&amp;key=</string>
+    <string name="title_activity_place_detail">PlaceDetailActivity</string>
+    <string name="place_detail_map_btn_title">See on map</string>
+    <string name="error_msg_screen">Not able to fetch the results \nCheck if internet connection is available</string>
+
+    <string-array name="Types">
+        <item>food</item>
+        <item>gym</item>
+        <item>school</item>
+        <item>hospital</item>
+        <item>spa</item>
+        <item>restaurant</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
