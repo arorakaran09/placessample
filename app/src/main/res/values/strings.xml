@@ -6,7 +6,7 @@
     <string name="progress_dialog_title">Please wait</string>
     <string name="progress_dialog_msg">Fetching Places&#8230;</string>
     <string name="places_api_url">https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=lat_key,lon_key&amp;radius=radius_key&amp;types=type_key&amp;key=api_key</string>
-    <string name="photos_api_url">https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&amp;photoreference=photo_ref&amp;key=</string>
+    <string name="photos_api_url">https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&amp;photoreference=photo_ref_key&amp;key=</string>
     <string name="title_activity_place_detail">PlaceDetailActivity</string>
     <string name="place_detail_map_btn_title">See on map</string>
     <string name="error_msg_screen">Not able to fetch the results \nCheck if internet connection is available</string>

@@ -80,6 +80,7 @@ public class PlacesStarUtils {
      */
     public static String getPhotoUrl(String photoApiUrl, String reference) {
         String photoAPiUrl = photoApiUrl + GOOGLE_API_KEP;
-        return photoAPiUrl.replace(PLACE_PHOTO_REF_KEY, reference);
+        photoAPiUrl = photoAPiUrl.replace(PLACE_PHOTO_REF_KEY, reference);
+        return photoAPiUrl;
     }
 }
