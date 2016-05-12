@@ -56,6 +56,9 @@ public class PlaceDetailsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Retain this fragment across configuration changes.
+        setRetainInstance(true);
     }
 
     @Override
@@ -100,6 +103,7 @@ public class PlaceDetailsFragment extends Fragment {
             mSelectedPlace = getArguments().getParcelable(PlacesStarUtils.SELECTED_PLACE_PARAM);
             if (mSelectedPlace != null) {
                 mSelectedPlaceNameView.setText(mSelectedPlace.getName());
+                mSelectedPlaceImageView.setDefaultImageResId(R.drawable.dummy_place_image);
                 ArrayList<PlacePhoto> photos = mSelectedPlace.getPhotos();
                 if ((photos != null) && (photos.size() > 0)) {
                     mSelectedPlaceImageView.setImageUrl(PlacesStarUtils.getPhotoUrl(getResources().getString(R.string.photos_api_url),

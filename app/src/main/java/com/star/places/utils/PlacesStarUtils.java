@@ -66,6 +66,11 @@ public class PlacesStarUtils {
     public static final int NO_CACHE = 0;
 
     /**
+     * Used to define camera zoom for location displayed on google map
+     */
+    public static final float CAMERA_ZOOM_PARAM = 15f;
+
+    /**
      * returns the url to fetch photo for given reference
      *
      * @param photoApiUrl photo url link

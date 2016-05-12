@@ -22,7 +22,6 @@ import com.star.places.network.GsonRequest;
 import com.star.places.network.StarPlacesVolley;
 import com.star.places.utils.PlacesStarUtils;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -55,6 +54,7 @@ public class PlacesMainFragment extends Fragment {
         @Override
         public void onErrorResponse(VolleyError error) {
             mProgressDialog.dismiss();
+            Toast.makeText(getActivity(), "Could not fetch places for selected category, Please check internet connection", Toast.LENGTH_SHORT).show();
         }
     };
 
@@ -76,6 +76,9 @@ public class PlacesMainFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Retain this fragment across configuration changes.
+        setRetainInstance(true);
     }
 
     @Override

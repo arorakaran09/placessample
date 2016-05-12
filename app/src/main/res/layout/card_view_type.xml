@@ -2,11 +2,11 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_view"
-    android:layout_width="80dp"
+    android:layout_width="@dimen/place_category_card_view_width"
     android:layout_height="wrap_content"
     card_view:cardUseCompatPadding="true"
-    card_view:cardCornerRadius="8dp"
-    android:layout_marginBottom="16dp">
+    card_view:cardCornerRadius="@dimen/place_category_card_view_radius"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,12 +23,11 @@
             android:id="@+id/place_type_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="13sp"
-            android:text="place type"
+            android:textSize="@dimen/place_category_card_view_font_size"
             android:gravity="center"
             android:layout_below="@+id/place_type_icon"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
+            android:paddingBottom="@dimen/place_category_card_view_radius"
+            android:paddingTop="@dimen/place_category_card_view_radius"
             android:layout_alignParentBottom="true"
             android:background="@color/cardview_light_background"/>
 

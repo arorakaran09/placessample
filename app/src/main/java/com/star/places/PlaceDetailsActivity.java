@@ -75,7 +75,7 @@ public class PlaceDetailsActivity extends ActionBarActivity implements PlaceDeta
         LatLng selectedPlaceCoord = new LatLng(Double.parseDouble(mSelectedPlace.getGeometry().getLocation().getLat()),
                 Double.parseDouble(mSelectedPlace.getGeometry().getLocation().getLng()));
         mMap.addMarker(new MarkerOptions().position(selectedPlaceCoord).title(mSelectedPlace.getName()));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(selectedPlaceCoord, 20f));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(selectedPlaceCoord, PlacesStarUtils.CAMERA_ZOOM_PARAM));
     }
 
     @Override

@@ -1,8 +1,6 @@
 package com.star.places;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -48,6 +46,9 @@ public class PlacesResultsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Retain this fragment across configuration changes.
+        setRetainInstance(true);
     }
 
     @Override
@@ -81,7 +82,7 @@ public class PlacesResultsFragment extends Fragment {
             // use a linear layout manager
             LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
             mPlacesResultsListView.setLayoutManager(layoutManager);
-
+            mPlacesResultsListView.setHasFixedSize(false);
             PlacesResultsViewAdapter rcAdapter = new PlacesResultsViewAdapter(mResults, new PlacesResultsViewAdapter.OnItemClickListener() {
                 @Override
                 public void onItemClick(PlacesResult selectedPlace) {

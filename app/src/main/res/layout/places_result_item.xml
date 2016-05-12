@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="70dp"
-    android:padding="6dip" >
+    android:layout_height="@dimen/place_result_list_item_height"
+    android:padding="@dimen/place_result_list_item_margin" >
 
     <com.android.volley.toolbox.NetworkImageView
         android:id="@+id/place_icon"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/place_result_list_item_icon_width"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:layout_marginRight="6dip"
-        android:contentDescription="TODO" />
+        android:layout_marginRight="@dimen/place_result_list_item_margin" />
 
     <TextView
         android:id="@+id/place_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_alignWithParentIfMissing="true"
         android:layout_toRightOf="@id/place_icon"
         android:gravity="center_vertical"
-        android:text="Example application"
-        android:textSize="16sp" />
+        android:textSize="@dimen/place_result_list_item_font_size" />
 
 </RelativeLayout>
